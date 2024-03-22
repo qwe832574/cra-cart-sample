@@ -26,18 +26,7 @@ export default function Products(){
                           {product.title}
                           <span className='float-end'>{product.price}</span>
                         </h6>
-                        <select className='form-select w-100 '
-                         
-                         onChange={(e)=>{
-                            e.preventDefault();
-                            
-                            
-                         }}
-                        >
-                          {[...Array(20)].map((_,i)=>{
-                            return (<option key={i} value={i+1}>{i+1}</option>)
-                          })}
-                        </select>
+                        
                         <button
                           type='button'
                           className='btn btn-outline-primary w-100'
